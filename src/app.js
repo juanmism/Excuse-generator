@@ -9,7 +9,7 @@ let when = [
   "while I was praying"
 ];
 
-function randomExcuse() {
+function randomExcuses() {
   let whoNum = Math.floor(Math.random() * 4);
   let actionNum = Math.floor(Math.random() * 4);
   let whatNum = Math.floor(Math.random() * 3);
@@ -24,4 +24,4 @@ function randomExcuse() {
     " " +
     when[whenNum];
 }
-window.onload = randomExcuse();
+window.onload = randomExcuses();
