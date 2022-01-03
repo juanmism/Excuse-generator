@@ -10,18 +10,18 @@ let when = [
 ];
 
 function randomExcuse() {
-  let whoNumber = Math.floor(Math.random() * 4);
-  let actionNumber = Math.floor(Math.random() * 4);
-  let whatNumber = Math.floor(Math.random() * 3);
-  let whenNumber = Math.floor(Math.random() * 5);
+  let whoNum = Math.floor(Math.random() * 4);
+  let actionNum = Math.floor(Math.random() * 4);
+  let whatNum = Math.floor(Math.random() * 3);
+  let whenNum = Math.floor(Math.random() * 5);
 
-  document.getElementById("excuse").innerHTML =
-    who[whoNumber] +
+  document.getElementById("excuses").innerHTML =
+    who[whoNum] +
     " " +
-    action[actionNumber] +
+    action[actionNum] +
     " " +
-    what[whatNumber] +
+    what[whatNum] +
     " " +
-    when[whenNumber];
+    when[whenNum];
 }
 window.onload = randomExcuse();
